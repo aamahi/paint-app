@@ -5,32 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paint App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <section class="tools-board">
-            <lable class="title">
-                Shapes
-            </lable>
-            <ul class="options">
-                <li class="option">
-                    <img src="icon/rectangle.svg"/>
-                    <span>Rectangle</span>
-                </li>
-                <li class="option">
-                    <img src="icon/circle.svg"/>
-                    <span>Circel</span>
-                </li>
-                <li class="option">
-                    <img src="icon/triangle-large-svgrepo-com.svg"/>
-                    <span>Tringle</span>
-                </li>
-                <li class="option">
-                    <input type="checkbox" id="fill-color"/>
-                    <span>Fill Color</span>
-                </li>
-            </ul>
+            <div class="row">
+                <lable class="title">
+                    Shapes
+                </lable>
+                <ul class="options">
+                    <li class="option">
+                        <img src="icon/rectangle.svg"/>
+                        <span>Rectangle</span>
+                    </li>
+                    <li class="option">
+                        <img src="icon/circle.svg"/>
+                        <span>Circel</span>
+                    </li>
+                    <li class="option">
+                        <img src="icon/triangle.svg"/>
+                        <span>Tringle</span>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="fill-color"/>
+                        <label>Fill Color</label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="row">
+                <lable class="title">
+                    Options
+                </lable>
+                <ul class="options">
+                    <li class="option active">
+                        <img src="icon/brush.svg"/>
+                        <span>Brush</span>
+                    </li>
+                    <li class="option">
+                        <img src="icon/eraser.svg"/>
+                        <span>Eraser</span>
+                    </li>
+                    <li class="option">
+                        <input type="range" id="size-slider"/>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="row colors">
+                <label class="title">Colors</label>
+                <ul class="options">
+                   <li class="option"></li>
+                   <li class="option selected"></li>
+                   <li class="option"></li>
+                   <li class="option">
+                        <input type="color" id="color-picker" value="#4A98F7">
+                   </li>
+                   <li class="option"></li>
+                </ul>
+            </div>
+            <div class="row buttons">
+                <button class="clear-canvas">Clear Canvas</button>
+                <button class="save-img">Save Image</button>
+            </div>
         </section>
+        <section class="drawing-board"></section>
     </div>
     
 </body>
