@@ -138,9 +138,4 @@ section{
 }
 .drawing-board{
   flex: 1;
-  /* overflow: hidden; */
 }
-/* .drawing-board canvas{
-  width: 100%;
-  height: 100%;
-} */
